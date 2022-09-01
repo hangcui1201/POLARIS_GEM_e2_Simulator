@@ -42,14 +42,32 @@ $ rosrun gem_stanley_sim stanley_sim.py
 <a href="url"><img src="./images/stanley_controller_gazebo.gif" width="600"></a>  
 
 
-#### Highbay Environment
+### Track2 Environment
 
 $ source devel/setup.bash  
-$ roslaunch gem_gazebo gem_gazebo_rviz.launch world_name:="highbay_track.world" x:=-5.5 y:=-21 velodyne_points:="true"
-  
+$ roslaunch gem_launch gem_init.launch world_name:="track2.world" y:=-98.5  
+
+
+### Example Environment
+
 $ source devel/setup.bash  
-$ roslaunch gem_gazebo gem_sensor_info.launch
+$ roslaunch gem_launch gem_init.launch  
+
+
+### Highbay Environment
+
+$ source devel/setup.bash  
+$ roslaunch gem_launch gem_init.launch world_name:="highbay_track.world" x:=-1.5 y:=-21 yaw:=3.1416  
 
 <a href="url"><img src="./images/highbay_rviz.png" width="600"></a>  
 
 <a href="url"><img src="./images/highbay_gazebo.png" width="600"></a>  
+
+
+
+
+
+
+
+
+
