@@ -25,18 +25,14 @@ $ roslaunch gem_launch gem_sensor_info.launch
 <a href="url"><img src="./images/simple_track_gazebo.png" width="600"></a>  
 
 
-#### Geometric based Lateral Controller
+##### Demo of Pure Pursuit Controller
 
 $ source devel/setup.bash  
-$ roslaunch gem_gazebo gem_gazebo_rviz.launch  
-
-$ source devel/setup.bash  
-$ roslaunch gem_gazebo gem_sensor_info.launch  
-
-$ source devel/setup.bash  
-$ rosrun gem_pure_pursuit_sim pure_pursuit_sim.py
+$ rosrun gem_pure_pursuit_sim pure_pursuit_sim.py  
 
 <a href="url"><img src="./images/pp_controller.gif" width="600"></a>  
+
+##### Demo of Stanley Controller
 
 $ source devel/setup.bash  
 $ rosrun gem_stanley_sim stanley_sim.py  
