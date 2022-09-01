@@ -12,10 +12,13 @@ This simulator was initially developed with ROS Melodic and Gazebo 9 in Ubuntu 1
 
 <a href="url"><img src="./images/Polaris_GEM_e2.png" width="600"></a>  
 
-#### Simple Track Environment
+#### Track1 Environment
 
 $ source devel/setup.bash  
-$ roslaunch gem_gazebo gem_gazebo_rviz.launch velodyne_points:="true"
+$ roslaunch gem_launch gem_init.launch world_name:="track1.world"  
+
+$ source devel/setup.bash  
+$ roslaunch gem_launch gem_sensor_info.launch  
 
 <a href="url"><img src="./images/simple_track_rviz.png" width="600"></a>  
 
