@@ -47,6 +47,7 @@ $ rosrun gem_stanley_sim stanley_sim.py
 $ source devel/setup.bash  
 $ roslaunch gem_launch gem_init.launch world_name:="track2.world" y:=-98.5  
 
+<a href="url"><img src="./images/track2_gazebo.png" width="600"></a>  
 
 ### Example Environment
 
