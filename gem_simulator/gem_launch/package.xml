@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gem_launch</name>
+  <version>1.0.0</version>
+  <description> The gem_launch is used to launch GEM simulator</description>
+  <author email="hangcui1201@gmail.com">Hang Cui</author>
+  <maintainer email="hangcui1201@gmail.com"> Hang Cui </maintainer>
+  <url type="repository">https://github.com/hangcui1201/POLARIS_GEM_e2_Simulator.git</url>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

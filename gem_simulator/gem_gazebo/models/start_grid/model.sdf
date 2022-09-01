@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="start_grid">
+    <static>true</static>
+    <link name="link">
+      <inertial>
+        <pose>0 0 1 0 0 0</pose>
+        <mass>5</mass>
+        <inertia>
+          <ixx>0.833</ixx>
+          <iyy>0.833</iyy>
+          <izz>0.833</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <pose>0 0 1 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://start_grid/meshes/start_grid.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <pose>0 0 1 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://start_grid/meshes/start_grid.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://start_grid/materials/scripts</uri>
+            <uri>model://start_grid/materials/textures/</uri>
+            <name>white</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

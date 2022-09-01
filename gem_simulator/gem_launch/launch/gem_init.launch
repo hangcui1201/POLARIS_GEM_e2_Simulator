@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Gazebo Init -->
+
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="world_name" default="example.world"/> 
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="verbose" value="false"/>
+    <arg name="world_name" value="$(find gem_gazebo)/worlds/$(arg world_name)"/>
+  </include>
+
+  <!-- Spawn the GEM Car -->
+  
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="yaw" default="0.0"/>
+  <arg name="velodyne_points" default="false"/>
+  
+  <include file="$(find gem_gazebo)/launch/gem_vehicle.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="yaw" default="$(arg yaw)"/>
+  </include>
+  
+  <!-- RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gem_launch)/config_rviz/gem_velodyne.rviz" />
+
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
