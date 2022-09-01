@@ -53,6 +53,9 @@ $ roslaunch gem_launch gem_init.launch world_name:="track2.world" y:=-98.5
 $ source devel/setup.bash  
 $ roslaunch gem_launch gem_init.launch  
 
+<a href="url"><img src="./images/example_rviz.png" width="600"></a>  
+
+<a href="url"><img src="./images/example_gazebo.png" width="600"></a>  
 
 ### Highbay Environment
 
